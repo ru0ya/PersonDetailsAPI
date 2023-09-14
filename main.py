@@ -13,10 +13,6 @@ load_dotenv()
 app = Flask(__name__)
 
 
-# database_url = os.getenv("DATABASE_URL")
-database_url = "postgres://wazing_user:xP8ve8oHj19UsZwu34eUlctC9vqXI0qr@dpg-ck0495h5mpss73clpro0-a.frankfurt-postgres.render.com/wazing"
-print(database_url)
-
 conn = psycopg2.connect(database_url)
 
 # create postgress table
