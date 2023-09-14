@@ -1,12 +1,14 @@
 # PersonDetails API
-This is a simple REST API built using Flask framework for managing  
+-------------------
+- This is a simple REST API built using Flask framework for managing  
 persons details. It is based off of CRUD methods that is (Create, Read,  
-Update, Delete) performed on a persons details.
+Update, Delete) performed on a persons details.  
+
 ---------------------------
 ## Table of Contents
-- Prerequisites  
-- Installation  
-- Routes  
+- [Prerequisites](https://github.com/ru0ya/PersonDetailsAPI/tree/main#prerequisites)  
+- [Installation](https://github.com/ru0ya/PersonDetailsAPI/tree/main#installation)  
+- [Routes](https://github.com/ru0ya/PersonDetailsAPI/tree/main#routes)  
 - UML-Diagram  
 - Testing
 - Deployment  
@@ -23,6 +25,7 @@ Follow the following steps to set up and run:
 1. Clone the repository to your local machine:  
 `git clone https://github.com/ru0ya/PersonDetailsAPI.git`  
 
+
 2. Navigate to project directory:  
 `cd PersonDetailsAPI`  
 
@@ -31,13 +34,13 @@ Follow the following steps to set up and run:
 `source env/bin/activate`  
 
 4. Run the following command to install dependencies:  
-` pip install -r requirements.txt'
+` pip install -r requirements.txt`  
 
 ------------------
 ## Routes  
 - First we need to connect to a postgresdB and create tables to enable queries:  
 
-** CREATE(POST) **  
+**CREATE(POST)**  
 
 
 
