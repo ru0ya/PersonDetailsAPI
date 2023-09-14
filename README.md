@@ -23,18 +23,28 @@ Ensure that you have the following readily installed in your system:
 ## Installation  
 Follow the following steps to set up and run:  
 1. Clone the repository to your local machine:  
-`git clone https://github.com/ru0ya/PersonDetailsAPI.git`  
+```
+git clone https://github.com/ru0ya/PersonDetailsAPI.git
+```  
 
 
 2. Navigate to project directory:  
-`cd PersonDetailsAPI`  
+```
+cd PersonDetailsAPI
+```  
 
 3. Run the following command to set up virtual environment:  
-` python -m venv env`  
-`source env/bin/activate`  
+```
+python -m venv env
+```  
+```
+source env/bin/activate
+```  
 
 4. Run the following command to install dependencies:  
-` pip install -r requirements.txt`  
+```
+pip install -r requirements.txt
+```  
 
 ------------------
 ## Routes  
