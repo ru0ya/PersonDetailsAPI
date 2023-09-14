@@ -52,16 +52,16 @@ def get(person_id):
     """
     with conn:
         with conn.cursor() as cursor:
-            cursor.execute("SELECT * FROM persons WHERE id = %s", (user_id,))
+            cursor.execute("SELECT * FROM persons WHERE id = %s", (person_id,))
             user = cursor.fetchone()
             if user:
                 return jsonify({"id": user[0], "name": user[1]}), 200
             else:
-                return jsonify({"error": f"User with ID {user_id} not found"}), 404
+                return jsonify({"error": f"User with ID {person_id} not found"}), 404
 
 
-@app.route("/api/<int:user_id>", methods=['PUT'])
-def update_persons(user_id):
+@app.route("/api/<int:person_id>", methods=['PUT'])
+def update_persons(person_id):
     """
     Updates person based on provided id
     """
@@ -69,18 +69,21 @@ def update_persons(user_id):
     name = data['name']
     with conn:
         with conn.cursor() as cursor:
-            cursor.execute("UPDATE persons SET name = %s WHERE id = %s", (name, user_id,))
+            cursor.execute(
+                    "UPDATE persons SET name = %s WHERE id = %s",
+                    (name,person_id,)
+                    )
         if cursor.rowcount == 0:
-            return jsonify({"error": f"User with ID {user_id} not found."}), 404
+            return jsonify({"error": f"User with ID {person_id} not found."}), 404
         return jsonify({
                 "id": user_id,
                 "name": name, 
-                "message": f"User {user_id} updated"
+                "message": f"User {person_id} updated"
                 }), 201
 
 
-@app.route("/api/<int:user_id>", methods=['DELETE'])
-def delete_person(user_id):
+@app.route("/api/<int:person_id>", methods=['DELETE'])
+def delete_person(person_id):
     """
     Deletes person based on provided id
     """
@@ -88,14 +91,14 @@ def delete_person(user_id):
     name = data['name']
     with conn:
         with conn.cursor() as cursor:
-            cursor.execute("DELETE FROM persons WHERE id = %s", (user_id,))
+            cursor.execute("DELETE FROM persons WHERE id = %s", (person_id,))
             if cursor.rowcount == 0:
-                return jsonify({"error": f"{user_id} not found, could not\
+                return jsonify({"error": f"{person_id} not found, could not\
                         complete operation"}), 404
     return jsonify({
         "id": user_id,
         "name": name,
-        "message": f"User {user_id} deleted"
+        "message": f"User {person_id} deleted"
         }), 201
 
 
