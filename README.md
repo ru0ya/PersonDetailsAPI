@@ -10,8 +10,8 @@ Update, Delete) performed on a persons details.
 - [Installation](https://github.com/ru0ya/PersonDetailsAPI/tree/main#installation)  
 - [Routes](https://github.com/ru0ya/PersonDetailsAPI/tree/main#routes)  
 - [Documentation](https://github.com/ru0ya/PersonDetailsAPI#documentation)  
-- Deployment  
 - UML-DIAGRAM
+- [Deployment](https://github.com/ru0ya/PersonDetailsAPI#deployment)  
 
 ------------------  
 ## Prerequisites  
@@ -217,7 +217,10 @@ curl -X DELETE https://persondetails.onrender.com/api/13
     "message": "User 13 deleted"
 }
 ```  
----------------------------
+---------------------------  
+## UML-DIAGRAMS
+![UML DIAGRAMS](UMLPersonDetailsAPI.png)
 
+---------------------------
 ## Deployment  
 https://persondetails.onrender.com/api/4
