@@ -9,8 +9,7 @@ Update, Delete) performed on a persons details.
 - [Prerequisites](https://github.com/ru0ya/PersonDetailsAPI/tree/main#prerequisites)  
 - [Installation](https://github.com/ru0ya/PersonDetailsAPI/tree/main#installation)  
 - [Routes](https://github.com/ru0ya/PersonDetailsAPI/tree/main#routes)  
-- Documentation  
-- Testing
+- [Documentation](https://github.com/ru0ya/PersonDetailsAPI#documentation)  
 - Deployment  
 - UML-DIAGRAM
 
@@ -162,5 +161,6 @@ Flask server should now run at http://127.0.0.1:8000
 ----------------------------------  
 ## Documentation
 - These are tests done with Postman to verify API's functionality  
-- https://api.getpostman.com/collections/29746601-66697261-e703-4f34-9119-aec29e22a9eb  
-
+```
+undefined/workspace/personapitests/collection/29746601-66697261-e703-4f34-9119-aec29e22a9eb?action=share&creator=29746601
+```
