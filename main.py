@@ -90,8 +90,8 @@ def delete_person(person_id):
         with conn.cursor() as cursor:
             cursor.execute("DELETE FROM persons WHERE id = %s", (person_id,))
             if cursor.rowcount == 0:
-                return jsonify({"error": f"{person_id} not found, could not\
-                        complete operation"}), 404
+                return jsonify({"error": f"{person_id} not found"}), 404
+
     return jsonify({
         "id": person_id,
         "name": name,

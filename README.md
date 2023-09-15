@@ -162,5 +162,6 @@ Flask server should now run at http://127.0.0.1:8000
 ## Documentation
 - These are tests done with Postman to verify API's functionality  
 ```
-undefined/workspace/personapitests/collection/29746601-66697261-e703-4f34-9119-aec29e22a9eb?action=share&creator=29746601
-```
+https://elements.getpostman.com/redirect?entityId=29746601-66697261-e703-4f34-9119-aec29e22a9eb&entityType=collection
+```  
+
