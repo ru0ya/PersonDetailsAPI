@@ -164,4 +164,60 @@ Flask server should now run at http://127.0.0.1:8000
 ```
 https://elements.getpostman.com/redirect?entityId=29746601-66697261-e703-4f34-9119-aec29e22a9eb&entityType=collection
 ```  
+-------------------------------  
 
+## Testing
+- GET
+```
+curl -X GET https://persondetails.onrender.com/api/3
+```
+- Result
+```
+{
+    "id": 3,
+    "name": "Tom Walker"
+}
+```
+
+- POST
+```
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Elton John"}' https://persondetails.onrender.com/api  
+```
+
+- Result
+```
+{
+    "id": 12,
+    "name": "Elton John"
+}
+```
+- PUT
+```
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Tom Walker"}' https://persondetails.onrender.com/api/3  
+```  
+
+- Result  
+```
+{
+    "id": 3,
+    "message": "User 3 updated",
+    "name": "Tom Walker"
+}
+```  
+
+- DELETE  
+```
+curl -X DELETE https://persondetails.onrender.com/api/13
+```
+
+- Result  
+```
+{
+    "id": 13,
+    "message": "User 13 deleted"
+}
+```  
+---------------------------
+
+## Deployment  
+https://persondetails.onrender.com/api/4
