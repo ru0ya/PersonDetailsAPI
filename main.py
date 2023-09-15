@@ -84,8 +84,6 @@ def delete_person(person_id):
     """
     Deletes person based on provided id
     """
-    data = request.get_json()
-    name = data['name']
     with conn:
         with conn.cursor() as cursor:
             cursor.execute("DELETE FROM persons WHERE id = %s", (person_id,))
@@ -94,7 +92,6 @@ def delete_person(person_id):
 
     return jsonify({
         "id": person_id,
-        "name": name,
         "message": f"User {person_id} deleted"
         }), 201
 
