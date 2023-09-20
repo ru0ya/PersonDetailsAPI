@@ -16,6 +16,7 @@ database_url = os.getenv("DATABASE_URL")
 
 conn = psycopg2.connect(database_url)
 
+
 # create postgress table
 CREATE_PERSONS_TABLE = "CREATE TABLE IF NOT EXISTS persons\
         (id SERIAL PRIMARY KEY, name TEXT);"
