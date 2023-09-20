@@ -10,7 +10,7 @@ Update, Delete) performed on a persons details.
 - [Installation](https://github.com/ru0ya/PersonDetailsAPI/tree/main#installation)  
 - [Routes](https://github.com/ru0ya/PersonDetailsAPI/tree/main#routes)  
 - [Documentation](https://github.com/ru0ya/PersonDetailsAPI#documentation)  
-- UML-DIAGRAM
+- [UML-DIAGRAM](https://github.com/ru0ya/PersonDetailsAPI#uml-diagrams)  
 - [Deployment](https://github.com/ru0ya/PersonDetailsAPI#deployment)  
 
 ------------------  
